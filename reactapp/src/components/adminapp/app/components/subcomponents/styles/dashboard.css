@@ -1,0 +1,26 @@
+.dash-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.dash-header p {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: rgb(43, 70, 150);
+}
+.dash-contents {
+  width: 95%;
+}
+.dash-c {
+  margin-top: 30px;
+}
+.dash-c-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.dash-c-2{
+  border-radius: 5px;
+  overflow: hidden;
+}

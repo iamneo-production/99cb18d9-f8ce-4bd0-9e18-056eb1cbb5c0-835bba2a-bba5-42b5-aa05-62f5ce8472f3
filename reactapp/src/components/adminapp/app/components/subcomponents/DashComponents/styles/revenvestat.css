@@ -1,0 +1,52 @@
+.revenuestat-wrapper {
+  width: 25vw;
+  height: 200px;
+  background: royalblue;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.dash-rs-heading h4 {
+  color: ghostwhite;
+  font-size: 20px;
+}
+.dash-rs-content-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.dash-rs-txt-div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.dash-rs-txt-div p:nth-child(1) {
+  font-size: 28px;
+  color: ghostwhite;
+  font-weight: bolder;
+  & span {
+    font-weight: bolder;
+  }
+}
+.dash-rs-content-graph{
+     width: 45%;
+     height: 100px;
+     /* background-color: red; */
+     display: flex;
+     justify-content: space-around;
+     align-items: end;
+}
+.dash-rs-bar{
+     height: var(--cH);
+     background-color: ghostwhite;
+     width: 5px;
+}
+.dash-rs-txt-div p:nth-child(2){
+     color: gainsboro;
+     font-size: 15px;
+}

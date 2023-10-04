@@ -1,0 +1,85 @@
+.productstatus-wrapper {
+  width: 35vw;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 5px;
+  display: flex;
+}
+.ps-content-2 {
+  height: 100%;
+  width: 200px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  & p:nth-child(2) {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    color: var(--darkblue);
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+.ps-progressCycle {
+  width: 90%;
+  height: 100%;
+  transition: 0.2s;
+  background: conic-gradient(
+    from 0deg,
+    skyblue 0% var(--sold),
+    royalblue var(--sold) var(--pen),
+    orange var(--pen)
+  );
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  & ::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    inset: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 100%;
+  }
+}
+.ps-content-1 {
+  width: calc(100% - 200px);
+  height: 100%;
+  padding: 10px 15px;
+}
+.ps-c-1-h-div {
+  padding: 5px 0;
+  & h4 {
+    color: var(--darkblue);
+    margin: 2px;
+  }
+  & p {
+    font-size: 15px;
+    color: gray;
+    padding: 0 3px;
+  }
+}
+.ps-c-1-pie-content {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 2px;
+  margin: 10px 0;
+}
+.ps-c-1-pie-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

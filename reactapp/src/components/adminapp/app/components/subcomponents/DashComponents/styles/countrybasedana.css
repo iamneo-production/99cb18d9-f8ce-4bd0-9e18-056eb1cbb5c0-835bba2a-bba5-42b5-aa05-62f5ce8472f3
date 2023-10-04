@@ -1,0 +1,72 @@
+.coun-b-ana-wrapper {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+}
+.con-b-ana-img-wrapper {
+  width: 750px;
+  height: 100%;
+}
+.con-b-ana-img {
+  width: 100%;
+  height: 100%;
+}
+.con-b-ana-stat-div {
+  width: calc(100% - 750px);
+  height: 100%;
+  padding: 20px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.con-b-ana-stat-heading-div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  & h4 {
+    font-size: 20px;
+    color: rgb(70, 70, 70);
+  }
+  & p {
+    font-size: 14px;
+    color: gray;
+  }
+}
+.linestat-wrapper {
+  width: 100%;
+  height: 50px;
+  margin: 3px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.linestat-nameDiv {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.linestat-linediv {
+  width: calc(100% - 50px);
+  color: gray;
+}
+.linestat-linediv {
+  display: flex;
+  align-items: center;
+}
+.linestat-line {
+  display: inline-block;
+  width: 350px;
+  height: 8px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    var(--barColor) 0% var(--per),
+    rgb(221, 220, 220) var(--per)
+  );
+}
